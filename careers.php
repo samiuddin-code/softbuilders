@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Move the uploaded file to the target directory
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $targetFile)) {
             echo "File uploaded successfully.";
-        } else {
+        } 
           
             exit();
         }
